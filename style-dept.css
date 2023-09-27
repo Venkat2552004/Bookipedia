@@ -1,0 +1,12 @@
+#container {
+    max-width: 100%;
+    width: 80%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.THead{
+    background-color: #67d2f3;
+    display: flex;
+    justify-content: center;
+}
