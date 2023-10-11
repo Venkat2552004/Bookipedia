@@ -15,11 +15,11 @@
     margin-right: 350px;
 }
 body {  
-    background-image: url("/bg.jpg");  
+    background-image: url("bg.jpg");  
     background-repeat:repeat-y;  
 }  
 .highlighted {
-    background-color: rgb(215, 114, 37);
+    background-color: rgb(255, 233, 106);
   }
 table{
     width: 1400px;
