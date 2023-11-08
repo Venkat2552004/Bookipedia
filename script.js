@@ -29,3 +29,14 @@ document.addEventListener('DOMContentLoaded', () =>{
         }
     }
 });
+
+
+let form = getElementById('request-form');
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    let formData = new FormData(form);
+    let request = new XMLHttpRequest();
+    request.open('POST', '/submit');
+    request.send(formData);
+    
+});

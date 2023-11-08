@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Request Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="request_form.css">
+    <script defer src="./index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form id="form" action="https://sheetdb.io/api/v1/ad1oe9cg41ed5" method="post">
+            <h1>Request a Book</h1>
+            <div class="input">
+                <label for="roll_no">Roll No</label>
+                <input id="roll_no" name="data[Roll No]" type="text">
+            </div>
+            <div class="input">
+                <label for="semester">Semester</label>
+                <input id="semester" name="data[Semester]" type="text">
+            </div>
+            <div class="input">
+                <label for="book">Book Name</label>
+                <input id="book"name="data[Book Name]" type="text">
+            </div>
+            <div class="input">
+                <label for="author">Author Name</label>
+                <input id="author"name="data[Author Name]" type="text">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
