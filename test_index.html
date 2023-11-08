@@ -1,40 +1,50 @@
-<!-- FILEPATH: /d:/PROJECTS/Test/index.html -->
-
 <!DOCTYPE html>
-<link rel="stylesheet" href="test_style.css">
-<html>
-    <head>
-        <title>My Website</title>
-    </head>
-    <body>
-        <div class="left">
-            <div class="left">
-                <div class="logo">
-                    <img src="logo.png" alt="Logo">
-                </div>
-                <div class="text"><p>A place where you can find all E-books related to your curriclulum</p></div>
-                <input type="text" class="search-bar" placeholder="Search...">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    <div class="container-bgimage" >
+        <div id="s-bar" class="search-bar">
+            <input id="sbar" type="search" placeholder="Ex : 20CS1101-CSE">
+            <a href="#" ><i id="sbutton" class="fa fa-search search-icon"></i></a>
+        </div>
+    </div>
+    <div id="dept-list" class="container-dept">
+        <div class="dept-header">
+            <h1>DEPARTMENTS</h1>
+        </div class="dept-list">
+            <div id="CSE" class="row-l">
+                <a href="CSE.html">Computer Science & Engineering</a>  
             </div>
-            <div class="request">
-                <p>Want to request a book?</p>
-                <a href="request.html" class="href">Click Here</a>
+            <div id="AIML" class="row-l">
+                <a href="AIML.html">Artifical Intellegence & Machine Learning</a>  
+            </div>
+            <div id="DS" class="row-l">
+                <a href="DS.html">Data Science</a>  
+            </div>
+            <div id="IT" class="row-2">
+                <a href="IT.html">Information Technology</a>  
+            </div>
+            <div id="ECE" class="row-2">
+                <a href="ECE.html">Electronics and Communication Engineering</a>  
+            </div>
+            <div id="EEE" class="row-2">
+                <a href="EEE.html">Electrical and Electronics Engineering</a>  
+            </div>
+            <div id="MECH" class="row-3">
+                <a href="MECH.html">Mechanical Engineering</a>  
+            </div>
+            <div id="CIVIL" class="row-3">
+                <a href="CIVIL.html">Civil Engineering</a>  
             </div>
         </div>
-        <div class="right">
-            <div class="button-group">
-                <div class="completed">Completed Departments</div>
-                <div class="button">CSE</div>
-                <div class="button">IT</div>
-            </div>
-            <div class="button-group">
-                <div class="incomplete">Under Construction</div>
-                <div class="button">DS</div>
-                <div class="button">AI & ML</div>
-                <div class="button">ECE</div>
-                <div class="button">EEE</div>
-                <div class="button">MECH</div>
-                <div class="button">CIVIL</div>
-            </div>
-        </div>
-    </body>
+            
+    </div>
+</body>
 </html>

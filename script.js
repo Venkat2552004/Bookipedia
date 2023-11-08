@@ -1,8 +1,7 @@
-
 document.addEventListener('DOMContentLoaded', () =>{
     let isIndex = false;
     let isDept = false;
-    if(document.title === 'Home'){
+    if(document.title === 'Bookipedia'){
         isIndex = true;
     }
     else{
@@ -31,6 +30,9 @@ document.addEventListener('DOMContentLoaded', () =>{
 });
 
 
+
+
+
 let form = getElementById('request-form');
 form.addEventListener('submit', function(event) {
     event.preventDefault();
@@ -40,3 +42,8 @@ form.addEventListener('submit', function(event) {
     request.send(formData);
     
 });
+
+function goToPage(pageName) {
+    window.location.href = pageName + '.html';
+}
+

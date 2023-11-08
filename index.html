@@ -1,50 +1,66 @@
+
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="script.js"></script>
-    <title>Home</title>
-</head>
-<body>
-    <div class="container-bgimage" >
-        <div id="s-bar" class="search-bar">
-            <input id="sbar" type="search" placeholder="Ex : 20CS1101-CSE">
-            <a href="#" ><i id="sbutton" class="fa fa-search search-icon"></i></a>
+
+<html>
+    <head>
+        <title>Bookipedia</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="script.js"></script>
+
+    </head>
+    <body>
+        <div class="left">
+                <div class="logo">
+                    <img src="/Bookipedia-logo.png" alt="Logo">
+                </div>
+                <div class="search-bar">
+                    <input type="text" class="s-bar" id="sbar" placeholder="Search... Ex : 20CS3303-CSE">
+                    <a href="#" ><i id="sbutton" class="fa fa-search search-icon"></i></a>
+                </div>
+                
+                <div class="text">-This project developed by the students of IIIrd year CSE.<br>
+                    -Our main goal is to provide a platform to download E-Textbooks for Students of PVPSIT<br>
+                    -For the users ease, use the below request form to request a book if needed<br>
+                    -After clicking on submit,click back to redirect to home page<br>
+                </div>
+                <div class="container">
+                    <form id="form" action="https://sheetdb.io/api/v1/ad1oe9cg41ed5" method="post">
+                        <h1>Request a Book</h1>
+                        <div class="input">
+                            <input id="roll_no" name="data[Roll No]" type="text" placeholder="Roll No">
+                        </div>
+                        <div class="input">
+                            <input id="semester" name="data[Semester]" type="text" placeholder="Semester">
+                        </div>
+                        <div class="input">
+                            <input id="book"name="data[Book Name]" type="text" placeholder="Book Name">
+                        </div>
+                        <div class="input">
+                            <input id="author"name="data[Author Name]" type="text" placeholder="Author Name">
+                        </div>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
         </div>
-    </div>
-    <div id="dept-list" class="container-dept">
-        <div class="dept-header">
-            <h1>DEPARTMENTS</h1>
-        </div class="dept-list">
-            <div id="CSE" class="row-l">
-                <a href="CSE.html">Computer Science & Engineering</a>  
-            </div>
-            <div id="AIML" class="row-l">
-                <a href="AIML.html">Artifical Intellegence & Machine Learning</a>  
-            </div>
-            <div id="DS" class="row-l">
-                <a href="DS.html">Data Science</a>  
-            </div>
-            <div id="IT" class="row-2">
-                <a href="IT.html">Information Technology</a>  
-            </div>
-            <div id="ECE" class="row-2">
-                <a href="ECE.html">Electronics and Communication Engineering</a>  
-            </div>
-            <div id="EEE" class="row-2">
-                <a href="EEE.html">Electrical and Electronics Engineering</a>  
-            </div>
-            <div id="MECH" class="row-3">
-                <a href="MECH.html">Mechanical Engineering</a>  
-            </div>
-            <div id="CIVIL" class="row-3">
-                <a href="CIVIL.html">Civil Engineering</a>  
+        <div class="right">
+            <div class="button-group">
+                <div class="completed">Completed Departments
+                    <div class="button" onclick="goToPage('CSE')">CSE</div>
+                    <div class="button" onclick="goToPage('IT')">IT</div>
+                </div>
+
+                    <div class="incomplete">Under Construction
+                        <div class="button" onclick="goToPage('DS')">DS</div>
+                        <div class="button" onclick="goToPage('AIML')">AIML</div>
+                        <div class="button" onclick="goToPage('ECE')">ECE</div>
+                        <div class="button" onclick="goToPage('EEE')">EEE</div>
+                        <div class="button" onclick="goToPage('MECH')">MECH</div>
+                        <div class="button" onclick="goToPage('CIVIL')">CIVIL</div>
+                    </div>
+                </div>
             </div>
         </div>
-            
-    </div>
-</body>
+    </body>
 </html>
