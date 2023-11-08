@@ -8,15 +8,16 @@
 .THead{
     border: 1px solid black;
     border-radius: 5px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     margin-left: 350px;
     margin-right: 350px;
 }
+
 body {  
-    background-image: url("bg.jpg");  
-    background-repeat:repeat-y;  
+    background-image: url("bg1.jpg");  
+    background-repeat:repeat-y; 
 }  
 .highlighted {
     background-color: rgb(255, 233, 106);
@@ -26,12 +27,16 @@ table{
     height: 350px;
     margin-left: auto;
     margin-right: auto;
+    background-color: rgb(255, 255, 255);
 }
+tr:hover{
+    background-color: rgb(200, 200, 200);
 
+}
 table,th,tr,td{
     border-collapse: collapse;
     /* if border needed change color*/
-    border: 1px solid white;
+    border: 1px solid black;
     text-align: center;
 }
 table img{
